@@ -11,7 +11,7 @@ function App() {
   const [charlieValue, setCharlieValue] = useState(null)
 
   useEffect(() =>{
-    fetch('http://localhost:3000/data.json')
+    fetch('https://mulahtableassessment.netlify.app/data.json')
       .then(res => res.json())
       .then(data => {
         setColumn(Object.keys(data.indexes[0]))
